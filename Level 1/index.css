@@ -1,12 +1,7 @@
- h1 {
-     color: red ;
+ /* This is my comment */
+ #heading {
+     color:violet;
  }
 
- p {
-     color: green ;
-
- }
- h2 {
-    color:blue ;
- }
+ 
  
