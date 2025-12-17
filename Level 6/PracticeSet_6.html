@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice Set_6</title>
+    <style>
+       * {
+          margin: 0;
+          padding: 0;
+       }
+        nav a{
+             text-decoration: none;
+        }
+        img {
+            height: 150px;
+            border-image-outset:3px solid black ;
+        }
+        #image_container {
+             border: 5px solid black;
+             height: 200px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             background-color: crimson;
+
+
+        }
+        nav {
+
+           display: flex;
+           justify-content: space-around;
+           height: 35px;
+           padding-top: 10px;
+        }
+        header {
+          background-color: darkgray;
+
+        }
+        #box_container {
+          border: 2px solid black;
+          margin: 5px;
+          padding: 5px;
+          display: flex;
+          justify-content: space-around;
+          height: 75px;
+          width: 300px;
+        }
+
+      .box {
+          height: 70px;
+          width: 70px;
+          border: 3px solid greenyellow ;
+          flex-shrink: 0;
+      }
+      #box3 {
+          flex-shrink: 4;
+          flex-grow: 1;
+      }
+
+      #media_box {
+          height: 50px;
+          width: 50px;
+          background-color: cadetblue;
+          border: 3px solid black;
+      }
+
+      @media screen and (min-width:350px) {
+      #media_box {
+          background-color: darkred;
+          height: 150px;
+          width: 150px;
+      }
+      @media screen and (min-width: 350px) and (max-width: 450px) {
+          #media_box {
+              background-color: cornflowerblue;
+          }
+          background-color: ;
+      }
+
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Sweet</a>
+        <a href="#">Contact</a>
+        <a href="#">Help</a>
+        <a href="#">Pseudo</a>
+      </nav>
+      <main>
+        <div id="image_container">
+          <img src="images.jpeg" alt=" image of god" />
+        </div>
+        <div id="box_container">
+          <div id="box1" class="box">Box1</div>
+          <div id="box2" class="box">Box2</div>
+          <div id="box3" class="box">Box3</div>
+        </div>
+
+        <div id="media_box">Media Box</div>
+      </main>
+    </header>
+  </body>
+</html>
