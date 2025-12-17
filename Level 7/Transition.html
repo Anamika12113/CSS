@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Class</title>
+        <style>
+           .click {
+                 height: 30px;
+                 width: 200px;
+                 background-color: rgba(39, 139, 0, 0.823);
+                 border: 3px solid #000000;
+                 border-radius: 15px;
+
+                 transition: all 2s ease-in-out 1s;
+           }
+
+           .click:hover {
+                       background-color: chocolate;
+                       height: 30px;
+                       width: 400px;
+           }
+           .click:active {
+                      background-color: darkblue;
+                      height: 30px;
+                      width: 400px;
+           }
+        </style>
+    </head>
+    <body>
+        <button class="click">Click Me</button>
+    </body>
+</html>
