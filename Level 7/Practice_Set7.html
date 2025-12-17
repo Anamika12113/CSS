@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice Set 7</title>
+    <style>
+      .progress_container {
+        height: 30px;
+        width: 95%;
+        background-color: bisque;
+        border: 2px solid black;
+        border-radius: 20px;
+        position: relative;
+        left: 3%;
+      }
+
+      .progress-bar {
+        background-color: cadetblue;
+        height: 100%;
+        border-radius: 25px;
+
+        animation: animation_progress 5s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes animation_progress {
+        0%{ width: 0%;}
+        90%{ width: 95%;}
+        95%{ width: 70%;}
+        100%{ width: 100%;}
+    
+        to {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress_container">
+      <div class="progress-bar"></div>
+    </div>
+  </body>
+</html>
